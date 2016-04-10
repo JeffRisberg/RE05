@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { fetchTasks, completeTask } from './actions';
+import { fetchTasks, completeTask } from './../actions/actions';
 import TaskList from './taskList';
 import Navigation from './nav';
 

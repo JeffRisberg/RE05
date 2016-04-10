@@ -1,23 +1,18 @@
 var path = require('path');
 
 module.exports = {
-  entry: [
-    'babel-polyfill',
-    ['.', 'src', 'app', 'index.js'].join(path.sep)
-  ],
-  resolve: {
-    modulesDirectories: ['node_modules']
-  },
+  entry: path.resolve(__dirname, 'public/index.js'),
   output: {
-    path: [__dirname, 'build'].join(path.sep),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
+
   module: {
     loaders: [
       {
-        test: /\.jsx?$/,
-        exclude: /(node_modules)/,
-        loader: 'babel'
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader?presets[]=es2015&presets[]=react'
       }
     ]
   }

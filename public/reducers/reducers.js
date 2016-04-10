@@ -1,4 +1,4 @@
-import { RECEIVE_TASKS, ADD_TASK, COMPLETE_TASK, LOGIN, LOGOUT } from './actions';
+import { RECEIVE_TASKS, ADD_TASK, COMPLETE_TASK, LOGIN, LOGOUT } from './../actions/actions';
 
 export default rootReducer;
 
@@ -7,8 +7,10 @@ const initialState = {
 };
 
 function rootReducer(state = initialState, action = null) {
+    console.log("rootReducer invoked " + action.type);
     switch (action.type) {
         case RECEIVE_TASKS:
+            console.log(action.payload);
             return Object.assign({}, state, {tasks: action.payload.tasks});
         case ADD_TASK:
             return addTaskReducer(state, action);

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { getAuth, login, logout, fetchTasks } from './actions';
+import { getAuth, login, logout, fetchTasks } from './../actions/actions';
 
 class Navigation extends Component {
   constructor(props) {
@@ -51,7 +51,6 @@ class Navigation extends Component {
       </div>
     );
   }
-
 }
 
 function select(state) {

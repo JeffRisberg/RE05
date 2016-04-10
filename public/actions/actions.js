@@ -1,4 +1,5 @@
 import fetch from 'isomorphic-fetch';
+import _ from 'es6-promise';
 
 //action types
 
@@ -54,21 +55,23 @@ export function fetchTasks() {
             };
         }
 
-        return fetch('https://habitica.com:443/api/v2/user/tasks', {
-            headers: {
-                'X-API-User': state.authentication.uuId,
-                'X-API-Key': state.authentication.apiToken
-            }
+        return fetch('/api/tasks', {
+            //headers: {
+            //    'X-API-User': state.authentication.uuId,
+            //    'X-API-Key': state.authentication.apiToken
+            //}
         })
             .then(response => response.json())
             .then((json) => {
-                dispatch(receiveTasks(json));
+                console.log(json);
+                dispatch(receiveTasks(json.tasks));
             })
             ;
     };
 }
 
 export function receiveTasks(tasks) {
+    console.log("receiveTasks " + tasks);
     return {
         type: RECEIVE_TASKS,
         payload: {

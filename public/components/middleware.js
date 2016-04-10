@@ -1,4 +1,4 @@
-import { LOGIN, LOGOUT } from './actions';
+import { LOGIN, LOGOUT } from './../actions/actions';
 
 export function authenticationMiddleware() {
     return next => action => {
