@@ -1,14 +1,7 @@
 import fetch from 'isomorphic-fetch';
-import _ from 'es6-promise';
 
-//action types
-
-export const LOGIN = 'LOGIN';
-export const LOGOUT = 'LOGOUT';
-
-export const RECEIVE_TASKS = 'RECEIVE_TASKS';
-export const ADD_TASK = 'ADD_TASK';
-export const COMPLETE_TASK = 'COMPLETE_TASK';
+import { LOGIN, LOGOUT } from '../constants/ActionTypes';
+import { RECEIVE_TASKS, ADD_TASK, COMPLETE_TASK } from '../constants/ActionTypes';
 
 export function getAuth() {
     let authentication = JSON.parse(localStorage.getItem('authentication')) || {apiToken: '', uuId: ''};

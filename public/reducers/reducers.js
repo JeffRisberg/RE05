@@ -1,4 +1,4 @@
-import { RECEIVE_TASKS, ADD_TASK, COMPLETE_TASK, LOGIN, LOGOUT } from './../actions/actions';
+import { RECEIVE_TASKS, ADD_TASK, COMPLETE_TASK, LOGIN, LOGOUT } from './../constants/ActionTypes';
 
 export default rootReducer;
 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+
 import { getAuth, login, logout, fetchTasks } from './../actions/actions';
 
 class Navigation extends Component {
