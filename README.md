@@ -1,6 +1,6 @@
 # RE05
 
-React-Redux Example with backend database (NeDB)
+Timer Example
 
 # To Start up
 
