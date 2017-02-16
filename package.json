@@ -1,5 +1,5 @@
 {
-  "name": "RE05",
+  "name": "re05",
   "version": "1.0.0",
   "main": "server/index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/JeffRisberg/RE05"
+    "url": "git+https://github.com/JeffRisberg/RE05.git"
   },
   "license": "MIT",
   "dependencies": {
@@ -19,16 +19,21 @@
     "react-dom": "^15.4.2"
   },
   "devDependencies": {
-    "babel-core": "^6.21.0",
-    "babel-jest": "^12.1.0",
-    "babel-loader": "^6.2.10",
-    "babel-plugin-transform-object-rest-spread": "^6.20.2",
-    "babel-preset-es2015": "^6.18.0",
-    "babel-preset-react": "^6.16.0",
-    "body-parser": "^1.15.2",
+    "babel-core": "^6.22.0",
+    "babel-loader": "^6.3.1",
+    "babel-plugin-transform-object-rest-spread": "^6.22.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "body-parser": "^1.16.1",
     "express": "^4.14.0",
-    "file-loader": "^0.8.5",
+    "file-loader": "^0.10.0",
     "nconf": "^0.8.2",
-    "webpack": "^1.14.0"
-  }
+    "webpack": "^2.2.1"
+  },
+  "description": "Timer Example",
+  "bugs": {
+    "url": "https://github.com/JeffRisberg/RE05/issues"
+  },
+  "homepage": "https://github.com/JeffRisberg/RE05#readme",
+  "author": ""
 }
