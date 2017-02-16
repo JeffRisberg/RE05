@@ -1,13 +1,16 @@
 {
   "name": "re05",
   "version": "1.0.0",
+  "description": "Timer Example",
+  "bugs": {
+    "url": "https://github.com/JeffRisberg/RE05/issues"
+  },
+  "homepage": "https://github.com/JeffRisberg/RE05#readme",
   "main": "server/index.js",
   "scripts": {
-    "start": "node server.js",
-    "postinstall": "webpack",
-    "webpack": "webpack",
-    "webpack-watch": "webpack --watch --colors",
-    "test": "jest"
+    "build": "./node_modules/.bin/webpack -w",
+    "wds-cli": "./node_modules/.bin/webpack-dev-server --inline --hot --module-bind 'css=style!css' --module-bind 'jsx=react-hot-loader!babel-loader' --config webpack.dev-cli.config.js",
+    "wds": "./node_modules/.bin/webpack-dev-server --config webpack.dev.config.js"
   },
   "repository": {
     "type": "git",
@@ -28,12 +31,8 @@
     "express": "^4.14.0",
     "file-loader": "^0.10.0",
     "nconf": "^0.8.2",
-    "webpack": "^2.2.1"
-  },
-  "description": "Timer Example",
-  "bugs": {
-    "url": "https://github.com/JeffRisberg/RE05/issues"
-  },
-  "homepage": "https://github.com/JeffRisberg/RE05#readme",
-  "author": ""
+    "react-hot-loader": "1.3.1",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0"
+  }
 }
