@@ -1,41 +1,34 @@
 {
   "name": "RE05",
   "version": "1.0.0",
-  "description": "React-Redux example of Task Management",
   "main": "server/index.js",
   "scripts": {
-    "start": "node server/index.js",
+    "start": "node server.js",
     "postinstall": "webpack",
     "webpack": "webpack",
-    "webpack-watch": "webpack --watch --colors"
+    "webpack-watch": "webpack --watch --colors",
+    "test": "jest"
   },
-  "author": "Jeff Risberg",
-  "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git://github.com/JeffRisberg/RE05.git"
+    "url": "https://github.com/JeffRisberg/RE05"
   },
+  "license": "MIT",
   "dependencies": {
-    "es6-promise": "^3.1.2",
-    "isomorphic-fetch": "^2.2.1",
-    "react": "^0.14.7",
-    "react-dom": "^0.14.7",
-    "react-redux": "^4.4.0",
-    "redux": "^3.3.1",
-    "redux-thunk": "^1.0.3"
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
   },
   "devDependencies": {
-    "babel-core": "^6.5.1",
-    "babel-loader": "^6.2.2",
-    "babel-plugin-transform-react-jsx": "^6.5.0",
-    "babel-preset-es2015": "^6.5.0",
-    "babel-preset-react": "^6.5.0",
-    "body-parser": "^1.4.3",
-    "express": "^4.13.1",
-    "glob": "^7.0.3",
-    "http-server": "^0.8.5",
-    "nedb": "^1.8.0",
-    "webpack": "^1.12.13",
-    "webpack-dev-server": "^1.14.1"
+    "babel-core": "^6.21.0",
+    "babel-jest": "^12.1.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-object-rest-spread": "^6.20.2",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "file-loader": "^0.8.5",
+    "nconf": "^0.8.2",
+    "webpack": "^1.14.0"
   }
 }

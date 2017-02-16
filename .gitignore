@@ -1,6 +1,5 @@
 node_modules
 dist
 npm-debug.log
-.idea
-
-src/app/config.js
+.idea/workspace.xml
+.idea/tasks.xml
