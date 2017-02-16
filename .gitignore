@@ -3,3 +3,4 @@ dist
 npm-debug.log
 .idea/workspace.xml
 .idea/tasks.xml
+/yarn.lock
