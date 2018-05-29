@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'development',
   entry: {
     javascript: "./app/timer.jsx"
   },
