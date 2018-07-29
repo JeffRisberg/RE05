@@ -8,9 +8,6 @@ First, install Node and NPM
 
 npm install
 
-npm run-script webpack
-
 npm start
 
-
-
+go to localhost:3000
